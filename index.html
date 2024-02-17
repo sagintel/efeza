@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/efezaa.png" type="image/x-icon">
+    <link rel="shortcut icon"  href="./img/efezaa.png">
+    <title>eFeza | Badge generator </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <img class="picture" src="./img/efeza.png" style="margin-bottom: 20px" width="190" height="90">
+            <div class="title_txt">
+              <h2 style="text-transform: uppercase;padding-bottom: 7px; border-bottom: 2px solid #006594;width: 159px" class="txte">Generate Badge</h2>
+            </div>
+            <fieldset class="field">
+              <legend >
+                <h2 class="txte">Super Agent Detail</h2>
+              </legend>
+            <div class="photo" id="photoView">
+                <h5 id="chose" style="color: #006594">Picture</h5>
+                <img id="imgView" src="" alt="">
+                <input type="file" id="file" hidden>
+            </div>            
+            <div class="input-view">
+              <div class="input-name">
+                <i class="fas fa-user"></i>
+                <input id="fName" required type="text" placeholder="First Name" />
+              </div>
+              <div class="input-name">
+                <i class="fas fa-user"></i>
+                <input id="lName" required type="text" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="aCode" required type="tel" placeholder="Agent Code" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input id="phone" required type="tel" placeholder="Phone Number" />
+            </div>
+            <div class="square">
+              <span></span>
+              <span></span>
+              <span></span>
+              <button type="submit"  id="sign-up-btn" class="btn solid">
+                 Generate
+              </button>              
+            </div>
+            </fieldset>
+
+            <p class="social-text">Made by <a class="txt" href="https://github.com/sagintel">Sagintel</a></p>
+            <div class="social-media">
+              <a href="https://x.com/ButoyiRodrigue" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rodrigue-butoyi-71a0191aa" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <div class="efeza">
+              <img src="./img/efezaa.png" width="70" height="70">
+            </div>
+            <h3 class="title">Download Now</h3>
+              <div id="badge" class="badge">
+                <div class="head">
+                  <div class="loga">
+                    <img width="40" height="40" src="./img/efezaa.png">
+                    <h3 style="color: white">
+                       *220#
+                    </h3>
+                  </div>
+                  <div class="avatar">
+                    <div class="avatar_img">
+                       <img id="card_img" src="./img/efezaa.png">
+                    </div>
+                    <div class="avatar_desc">
+                       <h3 id="card_name" style="color: white">Rodrigue Butoyi</h3>
+                       <h5 style="color: gold">SUPER AGENT</h5>
+                    </div>
+                  </div>
+                </div> 
+                <div class="body">
+                  <div class="contain">
+                    <div class="rotateA">
+                      
+                    </div>
+                    <div class="name">
+                      <span>Code |</span>
+                      <a id="card_code" id="card_name" href="#" target="_blank">32135</a>
+                    </div>
+                    <div class="rotateB">
+                      
+                    </div>
+                  </div>
+                  <div class="contain">
+                    <div class="rotateA">
+                      
+                    </div>
+                    <div class="name">
+                      <span>Tel |</span>
+                     <span> <a id="cardNumber" href="#" target="_blank">32879135</a>
+</span>                    </div>
+                    <div class="rotateB">
+                      
+                    </div>
+                  </div>
+                  <div class="contain">
+                    <div class="rotateA">
+                      
+                    </div>
+                    <div class="name">
+                      <a href="#" target="_blank">https://efeza.bi</a>
+                    </div>
+                    <div class="rotateB">
+                      
+                    </div>
+                  </div>
+                <div class="footer">
+                  <div class="logo">
+                    <h5 style="color: white; width:120px">
+                      Call |
+                    </h5>
+                     <h5 style="color: white;width:180px">
+                      22 56 08 97
+                    </h5>
+                  </div>
+                  <div class="logo">
+                    <h5 style="color: white; width:120px">
+                      E-mail |
+                    </h5>
+                     <h5 style="color: white;width:180px">
+                      info@hogi.bi
+                    </h5>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+            <div class="dwd_btn">
+                <div style="margin: 5px 5px 0px 0px" class="square">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <button id="btnImage"   class="btn solid">
+                     Download image
+                  </button>              
+                </div>
+                <div style="margin-left: 5px 0px 0px 5px;" class="square">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <button id="btnPDF"  class="btn solid">
+                    Download PDF
+                  </button>              
+                </div>
+            </div>
+            <p class="social-text">Made by <a class="txt" href="https://github.com/sagintel">Sagintel</a></p>
+            <div id="lottie-container"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>About us </h3>
+            <p>
+              We make your life easy, with eFeza for being fast and efficient, the eFeza app guarantees you <br><span style="font-weight: bold;">Security</span> , <span style="font-weight: bold;">Reliability</span>  and <span style="font-weight: bold;">Simplicity</span> 
+            </p>
+            <a href="https://efeza.bi" style="text-decoration: none;padding: 10px;width: 200px;border-radius: 10px;margin-top: 5px" class="btn transparent" >
+              Join us
+            </a>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              we appreciate your work and consideration, contact us for any needs
+            </p>
+            <a href="https://sagintel.github.io" style="text-decoration: none;padding: 10px;width: 200px;border-radius: 10px;margin-top: 5px" class="btn transparent" >
+              Contact Us
+            </a>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="snackbar">Congatulations</div>
+    <script src="./js/dom-to-image.js"></script>
+    <script src="./js/html2canvas.js"></script>
+    <script src="app.js"></script> 
+  </body>
+</html>
